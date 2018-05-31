@@ -1,4 +1,10 @@
 ejercicio_VI() {
+
+    #
+    # Basandome en la respuesta dada aca, no se pueden incluir variables en una expansion de la shell
+    # por lo tanto me limito a un for
+    # https://github.com/koalaman/shellcheck/wiki/SC2051
+    #
     if [[ $# -ne 2 ]]
     then
         echo "Esta funcion solo acepta dos parametros"
@@ -16,7 +22,14 @@ ejercicio_VI() {
         echo "El segundo parametro debe ser un numero"
         return 255;
     fi
-    command="touch $1{1..$2}"
-    `"$command"`
+    if [[ $2 -lt 1  ]]
+    then
+        echo "El segundo parametro no puede ser menor a 1"
+        return 255;
+    fi
     
+    for (( i=1 ; i <= $2 ; i++ ))
+    do
+        touch "${1}${i}"
+    done
 }
