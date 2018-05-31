@@ -31,7 +31,7 @@ Startup_message() {
     clear
     echo "${MAGENTA}Bienvenido!${NORMAL}"
     echo "Este script fue escrito por  ${RED}Matias Barrios${NORMAL} en Mayo de 2018 - Grupo 3IH"
-    echo "El codigo del mismo se puede encontrar en GitHub : ${GREEN}https://github.com/Matias-Barrios/Practico_scripting_I${NORMAL}"
+    echo "El codigo del mismo se puede encontrar en GitHub : ${GREEN}https://github.com/Matias-Barrios/Practico_scriptingII${NORMAL}"
     echo "Este script fue testeado en ${GREEN}Xubuntu 16.04${NORMAL}"
     echo "La version de BASH usada es : ${GREEN}4.3.48${NORMAL}"
     echo "${YELLOW}A continuacion procedemos a realizar los ejercicios uno por uno...${NORMAL}"
