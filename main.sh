@@ -108,7 +108,7 @@ Ejercicio_5 () {
     echo "${CYAN}Corriendo Ejercicio 5... ${NORMAL}"
     printf "\n"
     
-    #ejercicio_V sudoers
+    ejercicio_V sudoers
     
     printf "\n"
     echo "${CYAN}**** Ejercicio 5 completado **** ${NORMAL}"
